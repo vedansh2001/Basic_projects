@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullbody {background-color: grey; width: 100%; height: 780px; display: flex; justify-content: center; align-items: center;}
+        #box {height: 60%; width: 30%; background-color: skyblue; border-radius: 4px;}
+        #photobox {height: 50%; width: 50%; background-color: lightblue; margin-left: 25%; }
+        #followersbox {height: 50%; width: 50%; background-color: rgb(187, 184, 184); margin-left: 25%; }
+    </style>
+</head>
+<body>
+    <div id="fullbody">
+        <div id="box">
+            <div id="photobox"><img id="img" src="" height="150px" width="150px" ></div>
+            <div id="followersbox">4000k followers</div>
+        </div>
+    </div>
+</body>
+<script>
+const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
+const xhr = new XMLHttpRequest();
+xhr.open('GET', requestUrl)
+console.log("hello");
+
+xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(data.avatar_url);
+        console.log(data.followers);
+        document.querySelector('#img').src = data.avatar_url;
+
+    }
+    
+}
+xhr.send();
+    
+</script>
+</html>
+
+

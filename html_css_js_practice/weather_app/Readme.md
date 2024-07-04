@@ -4,4 +4,4 @@ This is a basic Weather app made using javascript. It uses an api from openweath
 
 ## Screenshots
 
-![App Screenshot](weather_app/photos/weather_app.png)
+![App Screenshot](photos/weather_app.png)
