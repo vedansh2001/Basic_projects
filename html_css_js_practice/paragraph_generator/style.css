@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(243, 240, 240);
+}
+
+.fullPage{
+    padding-top: 5%;
+    
+}
+.upperDiv{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+.lowerDiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+#enterDiv{
+    background-color: gray;
+    width: 70%;
+    margin-right: 3%;
+    height: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+#paragraph{
+    background-color: rgb(218, 215, 215);
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    font-size: 19px;
+}
+#buttonDiv{
+    background-color: brown;
+    width: 8%;
+    min-width: 60px;
+    color: white;
+    font-size: 20px;
+    border-radius: 15px;
+    
+}
+#buttonDiv:hover{
+    opacity: 0.8;
+    scale: 1.05;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#generatedparaDiv{
+    margin-top: 100px;
+    
+}
+#generatedpara{
+    width: 70%;
+    height: 150px;
+    border: 1px solid darkslategray;
+    background-color: rgb(218, 215, 215);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    margin-left: 9.5%;
+    padding-left: 12px;
+    padding-top: 8px;    
+}
